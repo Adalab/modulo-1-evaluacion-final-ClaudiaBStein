@@ -1,0 +1,68 @@
+.main {
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  &__section1 {
+    height: 376px;
+    padding: 24px 15px 0px 15px;
+
+    display: grid;
+    grid-template-rows: 30px 60px 120px 45px;
+    row-gap: 18px;
+    &--title {
+      color: #8ccbea;
+      font-family: "Roboto", sans-serif;
+      line-height: 30px;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+    &--subtitle {
+      font-family: "Roboto Slab", serif;
+      font-size: 27px;
+      line-height: 30px;
+      text-transform: capitalize;
+    }
+    &--text {
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      color: #4a4a4a;
+    }
+    &--button {
+      height: 45px;
+      width: 76px;
+      border: 2px solid #f26002;
+      border-radius: 22.5px;
+      background-color: white;
+      #buttonText {
+        color: #f26002;
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+  }
+
+  &__section2 {
+    height: 624px;
+    background-color: #eff9ff;
+    padding: 30px 15px 0px 15px;
+    display: grid;
+    grid-template-rows: 30px 93px 93px 93px 45px;
+    row-gap: 36px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    // &--title {
+    // }
+    // &--article {
+    //   &--title {
+    //   }
+    //   &--text {
+    //   }
+    // }
+    // &--button {
+    // }
+  }
+}

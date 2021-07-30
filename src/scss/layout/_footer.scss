@@ -1,9 +1,12 @@
+//<--------ANIMATIONS--------->//
+
 .division__button:hover {
-  background-color: #ffae7b;
+  transition: 0.8s ease-in-out;
+  background: #0271bc;
 }
-.division__button--arrow:hover {
-  color: white;
-}
+
+//<---------CSS--------->//
+
 .division {
   width: 100%;
   position: absolute;
@@ -30,6 +33,18 @@
   height: 465px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: #304268;
   color: white;
+  &__section1 {
+    width: 290px;
+    position: absolute;
+    margin-top: 360px;
+    font-family: "Roboto", sans-serif;
+    &--heart {
+      color: #f26002;
+    }
+  }
 }

@@ -1,3 +1,7 @@
+.header__button:hover {
+  transition: 0.8s ease-in-out;
+  background: #304268;
+}
 .menu {
   width: 44px;
   height: 44px;
@@ -44,6 +48,7 @@
     font-family: "Roboto", sans-serif;
   }
   &__button {
+    border: none;
     background-color: #ffffff;
     padding: 14.5px;
     border-radius: 25px;
@@ -52,7 +57,7 @@
     margin-top: 477px;
     &--img {
       width: 20px;
-      margin: 2px 0px 12px -4px;
+      margin: 4px 0px 0px -3px;
     }
   }
 }

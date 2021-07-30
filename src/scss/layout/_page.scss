@@ -26,6 +26,7 @@
     }
     &--text {
       font-family: "Roboto", sans-serif;
+      font-weight: 400;
       font-size: 18px;
       line-height: 30px;
       color: #4a4a4a;
@@ -54,15 +55,38 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    // &--title {
-    // }
-    // &--article {
-    //   &--title {
-    //   }
-    //   &--text {
-    //   }
-    // }
-    // &--button {
-    // }
+    &--title {
+      font-family: "Roboto Slab", serif;
+      font-size: 28px;
+      text-transform: capitalize;
+      line-height: 30px;
+    }
+    &--article {
+      line-height: 30px;
+      width: 184px;
+      margin: 0px 68px 0px 68px;
+
+      &--title {
+        font-family: "Roboto Slab", serif;
+        font-size: 18px;
+      }
+      &--text {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+      }
+    }
+    &--button {
+      height: 45px;
+      width: 184px;
+      margin: 0px 68px 0px 68px;
+      border: 0;
+      background-color: #f26002;
+      border-radius: 23px;
+      #textButton {
+        color: #ffffff;
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+      }
+    }
   }
 }

@@ -4,13 +4,18 @@
   background-color: white;
   display: grid;
   grid-template-columns: 1fr;
+  @media all and (min-width: 768px) {
+    // height: 727px;//
+  }
   &__section1 {
     height: 376px;
     padding: 24px 15px 0px 15px;
-
     display: grid;
     grid-template-rows: 30px 60px 120px 45px;
     row-gap: 18px;
+    @media all and (min-width: 768px) {
+      padding: 24px 60px 0px 60px;
+    }
     &--title {
       color: #8ccbea;
       font-family: "Roboto", sans-serif;
@@ -23,6 +28,9 @@
       font-size: 27px;
       line-height: 30px;
       text-transform: capitalize;
+      @media all and (min-width: 768px) {
+        font-size: 1.5em;
+      }
     }
     &--text {
       font-family: "Roboto", sans-serif;
@@ -30,6 +38,9 @@
       font-size: 18px;
       line-height: 30px;
       color: #4a4a4a;
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+      }
     }
     &--button {
       height: 45px;

@@ -3,7 +3,7 @@
 //<---------CSS--------->//
 
 .division {
-  width: 100%;
+  width: 100vw;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@
   }
 }
 .footer {
-  width: 100%;
+  width: 100vw;
   height: 465px;
   display: flex;
   flex-direction: column;

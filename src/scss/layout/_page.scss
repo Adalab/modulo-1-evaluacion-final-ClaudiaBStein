@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 1fr;
   @media all and (min-width: 768px) {
-    // height: 727px;//
+    height: 727px;
   }
   &__section1 {
     height: 376px;
@@ -15,6 +15,9 @@
     row-gap: 18px;
     @media all and (min-width: 768px) {
       padding: 24px 60px 0px 60px;
+    }
+    @media all and (min-width: 1200px) {
+      padding: 24px 259px 0px 259px;
     }
     &--title {
       color: #8ccbea;
@@ -68,34 +71,54 @@
   }
 
   &__section2 {
-    width: 100%;
+    width: 100vw;
     height: 624px;
     background-color: #eff9ff;
     padding: 0px 15px 0px 15px;
     display: grid;
-    grid-template-rows: 30px 93px 93px 93px 45px;
+    column-gap: 0;
     row-gap: 45px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     text-align: center;
+    @media all and (min-width: 768px) {
+      grid-template-columns: 210px 210px 210px;
+      height: 397px;
+    }
     &--title {
       font-family: "Roboto Slab", serif;
       font-size: 28px;
       text-transform: capitalize;
       line-height: 30px;
+      @media all and (min-width: 768px) {
+        grid-column: 1/4;
+      }
     }
     &--article {
       line-height: 30px;
       width: 184px;
       margin: 0px 68px 0px 68px;
+      text-align: center;
+
+      @media all and (min-width: 768px) {
+        margin: 0;
+      }
 
       &--title {
         font-family: "Roboto Slab", serif;
         font-size: 18px;
+        @media all and (min-width: 768px) {
+          font-size: 24px;
+          width: 210px;
+        }
       }
       &--text {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
+        @media all and (min-width: 768px) {
+          font-size: 20px;
+          width: 210px;
+        }
       }
     }
     &--button {
@@ -105,6 +128,11 @@
       border: 0;
       background-color: #f26002;
       border-radius: 23px;
+      @media all and (min-width: 768px) {
+        margin: 0;
+        grid-column: 2/3;
+        width: 210px;
+      }
       &:hover {
         transition: 0.5s ease-in-out;
         background: #ffffff;

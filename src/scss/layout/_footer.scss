@@ -9,6 +9,9 @@
   justify-content: center;
   align-items: center;
   transform: translate(0, -20px);
+  @media all and (min-width: 768px) {
+    transform: translate(0, 24px);
+  }
   &__button {
     width: 45px;
     height: 45px;
@@ -33,22 +36,63 @@
   text-align: center;
   background-color: #304268;
   color: white;
+  @media all and (min-width: 768px) {
+    height: 240px;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: left;
+    padding-left: 120px;
+  }
+  @media all and (min-width: 1200px) {
+    padding-left: 270px;
+  }
   &__section {
     width: 290px;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
     margin-top: 360px;
     font-family: "Roboto", sans-serif;
+    @media all and (min-width: 768px) {
+      margin-top: -30px;
+      margin-left: 60px;
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      justify-content: space-evenly;
+    }
+    @media all and (min-width: 1200px) {
+      padding-left: 5px;
+    }
     &--heart {
       color: #f26002;
     }
   }
   &__nav {
+    width: 768px;
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 116px 0px 48px 230px;
+    }
+    @media all and (min-width: 1200px) {
+    }
     &--list {
       height: 150px;
       line-height: 30px;
       margin-top: -60px;
+
       text-transform: uppercase;
       font-family: "Roboto", sans-serif;
+      @media all and (min-width: 768px) {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
       a {
         color: white;
       }
@@ -59,6 +103,10 @@
       margin-top: 30px;
       font-family: "Roboto", sans-serif;
       text-transform: uppercase;
+
+      @media all and (min-width: 768px) {
+        margin: 0;
+      }
       a {
         color: white;
       }

@@ -1,5 +1,5 @@
 .division {
-  margin-left: 45%;
+  margin-left: 48%;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -23,6 +23,9 @@
     transform: translate(0, 24px);
     margin-left: 49%;
   }
+  @media all and (min-width: 1200px) {
+    margin-left: 49.59%;
+  }
   &__button {
     width: 45px;
     height: 45px;
@@ -42,7 +45,6 @@
 .footer {
   width: 100vw;
   height: 465px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +62,8 @@
   //<--------MEDIAQUERY--------->//
   @media all and (min-width: 1200px) {
     padding-left: 270px;
-    height: 247px;
+    height: 320px;
+    padding-right: 270px;
   }
   &__section {
     width: 290px;

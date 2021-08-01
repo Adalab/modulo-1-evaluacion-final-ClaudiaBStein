@@ -1,5 +1,4 @@
 .division {
-  margin-left: 48%;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -24,17 +23,22 @@
     margin-left: 49%;
   }
   @media all and (min-width: 1200px) {
-    margin-left: 49.59%;
+    margin-left: 48%;
   }
   &__button {
     width: 45px;
     height: 45px;
+    margin-left: 46vw;
     background-color: $color-white;
     border-radius: 22.5px;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media all and (min-width: 768px) {
+      margin-left: 0;
+      margin-right: 46vw;
+    }
     &--arrow {
       width: 20.6px;
       height: 24px;

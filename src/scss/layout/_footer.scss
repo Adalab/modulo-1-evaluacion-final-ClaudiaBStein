@@ -1,24 +1,37 @@
-//<--------ANIMATIONS--------->//
-
-//<---------CSS--------->//
-
 .division {
-  width: 100vw;
+  margin-left: 45%;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translate(0, -20px);
+  //<--------ANIMATIONS--------->//
+  animation: jump 0.7s ease 1s infinite alternate;
+  @keyframes jump {
+    0% {
+      transform: scale(1.1, -1.1);
+    }
+    50% {
+      transform: scale(0.9, 1.1);
+    }
+    70% {
+      transform: scale(1);
+    }
+  }
+  //<--------MEDIAQUERY--------->//
   @media all and (min-width: 768px) {
     transform: translate(0, 24px);
+    margin-left: 49%;
   }
   &__button {
     width: 45px;
     height: 45px;
-    background-color: white;
+    background-color: $color-white;
     border-radius: 22.5px;
     border: none;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &--arrow {
       width: 20.6px;
       height: 24px;
@@ -29,55 +42,64 @@
 .footer {
   width: 100vw;
   height: 465px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #304268;
-  color: white;
+  background-color: $color-blue;
+  color: $color-white;
+  //<--------MEDIAQUERY--------->//
   @media all and (min-width: 768px) {
     height: 240px;
     justify-content: space-between;
     flex-direction: row;
     text-align: left;
-    padding-left: 120px;
   }
+  //<--------MEDIAQUERY--------->//
   @media all and (min-width: 1200px) {
     padding-left: 270px;
+    height: 247px;
   }
   &__section {
     width: 290px;
+
     position: absolute;
     display: flex;
     flex-direction: column;
     align-content: center;
     text-align: center;
     margin-top: 360px;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-text;
+
+    //<--------MEDIAQUERY--------->//
     @media all and (min-width: 768px) {
       margin-top: -30px;
-      margin-left: 60px;
+
       display: flex;
       flex-direction: row;
       text-align: left;
       justify-content: space-evenly;
     }
+    //<--------MEDIAQUERY--------->//
     @media all and (min-width: 1200px) {
       padding-left: 5px;
     }
     &--heart {
-      color: #f26002;
+      color: $color-orange;
     }
   }
   &__nav {
-    width: 768px;
+    width: 100vw;
+    //<--------MEDIAQUERY--------->//
     @media all and (min-width: 768px) {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      padding: 116px 0px 48px 230px;
+      padding: 116px 0px 48px 17%;
     }
+    //<--------MEDIAQUERY--------->//
     @media all and (min-width: 1200px) {
     }
     &--list {
@@ -86,7 +108,8 @@
       margin-top: -60px;
 
       text-transform: uppercase;
-      font-family: "Roboto", sans-serif;
+      font-family: $font-text;
+      //<--------MEDIAQUERY--------->//
       @media all and (min-width: 768px) {
         margin: 0;
         display: flex;
@@ -94,21 +117,21 @@
         justify-content: space-between;
       }
       a {
-        color: white;
+        color: $color-white;
       }
     }
     &--media {
       height: 90px;
       line-height: 30px;
       margin-top: 30px;
-      font-family: "Roboto", sans-serif;
+      font-family: $font-text;
       text-transform: uppercase;
-
+      //<--------MEDIAQUERY--------->//
       @media all and (min-width: 768px) {
         margin: 0;
       }
       a {
-        color: white;
+        color: $color-white;
       }
     }
   }
